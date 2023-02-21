@@ -6,6 +6,9 @@ import org.nttdata.btask.interfaces.AuthService;
 import org.nttdata.domain.contract.AuthRepository;
 import org.nttdata.domain.models.AuthDto;
 
+import javax.enterprise.context.ApplicationScoped;
+
+@ApplicationScoped
 public class AuthServiceImpl implements AuthService {
   private final AuthRepository authRepository;
 
